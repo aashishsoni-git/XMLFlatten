@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InsuranceData generatedOn="2025-09-23T00:00:00+05:30" source="sample-generator">
+  <!-- Policy 1 -->
+  <Policy policyNumber="POL-2025-0001" product="PrivateMotor" status="Active">
+    <PolicyHeader>
+      <EffectiveDate>2025-03-01</EffectiveDate>
+      <ExpiryDate>2026-02-28</ExpiryDate>
+      <Premium currency="INR">12500.00</Premium>
+      <PaymentFrequency>Annual</PaymentFrequency>
+    </PolicyHeader>
+
+    <PolicyHolder id="PH-1001">
+      <Name>
+        <Given>Amit</Given>
+        <Middle>Kumar</Middle>
+        <Family>Sharma</Family>
+      </Name>
+      <DateOfBirth>1988-07-15</DateOfBirth>
+      <Gender>M</Gender>
+      <Contact>
+        <Phone type="mobile">+91-9876543210</Phone>
+        <Email>amit.sharma@example.com</Email>
+        <Address>
+          <Line1>12 Silver Oaks</Line1>
+          <City>Hyderabad</City>
+          <State>Telangana</State>
+          <PostalCode>500081</PostalCode>
+          <Country>IN</Country>
+        </Address>
+      </Contact>
+      <Occupation>Software Engineer</Occupation>
+      <KYC idType="Aadhaar">XXXX-XXXX-1234</KYC>
+    </PolicyHolder>
+
+    <InsuredItem type="Vehicle" itemId="V-5001">
+      <Make>Toyota</Make>
+      <Model>Corolla Altis</Model>
+      <RegistrationNo>TS09AB1234</RegistrationNo>
+      <ManufactureYear>2019</ManufactureYear>
+      <EngineNo>EN1234567890</EngineNo>
+      <ChassisNo>CH9876543210</ChassisNo>
+      <Coverage>
+        <CoverageType code="COM">Comprehensive</CoverageType>
+        <SumInsured currency="INR">800000.00</SumInsured>
+        <Deductible currency="INR">5000.00</Deductible>
+      </Coverage>
+      <AddOns>
+        <Rider code="ZeroDep">Zero Depreciation</Rider>
+        <Rider code="RoadsideAssist">Roadside Assistance</Rider>
+      </AddOns>
+    </InsuredItem>
+
+    <Coverages>
+      <Coverage id="COV-01">
+        <Type>Own Damage</Type>
+        <Limit currency="INR">800000.00</Limit>
+      </Coverage>
+      <Coverage id="COV-02">
+        <Type>Third Party Liability</Type>
+        <Limit currency="INR">7500000.00</Limit>
+      </Coverage>
+	  <Coverage id="COV-03">
+        <Type>two Damage</Type>
+        <Limit currency="INR">100.00</Limit>
+      </Coverage>
+      <Coverage id="COV-04">
+        <Type>Sample Cvrg</Type>
+        <Limit currency="INR">1000000.00</Limit>
+      </Coverage>
+    </Coverages>
+
+    <Claims>
+      <Claim claimId="CL-9001" reportedDate="2025-06-18" status="Settled">
+        <Accident>
+          <Date>2025-06-15</Date>
+          <Location>Secunderabad</Location>
+          <Description>Rear-end collision at traffic signal</Description>
+        </Accident>
+        <Claimant>
+          <Name>Ravi Kumar</Name>
+          <Relation>Third Party</Relation>
+          <Contact>
+            <Phone>+91-9988776655</Phone>
+          </Contact>
+        </Claimant>
+        <Assessments>
+          <Assessment assessor="InsureAssess Pvt Ltd" assessedOn="2025-06-20">
+            <EstimatedLoss currency="INR">42000.00</EstimatedLoss>
+            <ApprovedAmount currency="INR">40000.00</ApprovedAmount>
+            <Notes>Minor bumper and tail-light replacement</Notes>
+          </Assessment>
+        </Assessments>
+        <Documents>
+          <Document id="D-1001" type="FIR">fir_CL-9001.pdf</Document>
+          <Document id="D-1002" type="Estimate">estimate_CL-9001.pdf</Document>
+        </Documents>
+        <Payments>
+          <Payment paymentId="P-7001" method="NEFT" date="2025-06-25" amount="40000.00" currency="INR">
+            <TransactionRef>TXN20250625001</TransactionRef>
+            <PaidTo>Ravi Kumar</PaidTo>
+          </Payment>
+        </Payments>
+        <Settlement>
+          <SettledOn>2025-06-25</SettledOn>
+          <SettlementMode>Reimbursement</SettlementMode>
+        </Settlement>
+      </Claim>
+
+      <Claim claimId="CL-9002" reportedDate="2025-08-02" status="Open">
+        <Accident>
+          <Date>2025-08-01</Date>
+          <Location>Gachibowli</Location>
+          <Description>Single vehicle hit pothole, tyre and rim damage</Description>
+        </Accident>
+        <Assessments>
+          <Assessment assessor="QuickAssess" assessedOn="2025-08-03">
+            <EstimatedLoss currency="INR">18000.00</EstimatedLoss>
+            <Notes>Tyre replacement and balancing</Notes>
+          </Assessment>
+        </Assessments>
+      </Claim>
+    </Claims>
+
+    <Agent agentId="AG-3001">
+      <Name>Priya Verma</Name>
+      <Agency>SecureLife Brokers</Agency>
+      <Contact>
+        <Phone>+91-9123456780</Phone>
+        <Email>priya.verma@securelife.example</Email>
+      </Contact>
+    </Agent>
+
+    <Audit>
+      <CreatedBy>system</CreatedBy>
+      <CreatedOn>2025-03-01T09:12:00</CreatedOn>
+      <LastUpdatedBy>agent_user</LastUpdatedBy>
+      <LastUpdatedOn>2025-08-05T11:20:00</LastUpdatedOn>
+    </Audit>
+  </Policy>
+
+  <!-- Policy 2 -->
+  <Policy policyNumber="POL-2025-0024" product="Health" status="Lapsed">
+    <PolicyHeader>
+      <EffectiveDate>2024-11-01</EffectiveDate>
+      <ExpiryDate>2025-10-31</ExpiryDate>
+      <Premium currency="INR">32000.00</Premium>
+      <PaymentFrequency>Monthly</PaymentFrequency>
+    </PolicyHeader>
+
+    <PolicyHolder id="PH-1002">
+      <Name>
+        <Given>Sneha</Given>
+        <Family>Reddy</Family>
+      </Name>
+      <DateOfBirth>1992-02-10</DateOfBirth>
+      <Gender>F</Gender>
+      <Contact>
+        <Phone>+91-9012345678</Phone>
+        <Email>sneha.reddy@example.com</Email>
+        <Address>
+          <Line1>Flat 5B, Green Meadows</Line1>
+          <City>Visakhapatnam</City>
+          <State>Andhra Pradesh</State>
+          <PostalCode>530001</PostalCode>
+        </Address>
+      </Contact>
+      <Occupation>Teacher</Occupation>
+      <KYC idType="PAN">ABCDE1234F</KYC>
+    </PolicyHolder>
+
+    <Coverages>
+      <Coverage id="COV-H1">
+        <Type>In-patient Hospitalization</Type>
+        <Limit currency="INR">500000.00</Limit>
+      </Coverage>
+      <Coverage id="COV-H2">
+        <Type>Maternity</Type>
+        <Limit currency="INR">100000.00</Limit>
+      </Coverage>
+    </Coverages>
+
+    <Dependents>
+      <Dependent id="DPT-01">
+        <Name>Arjun Reddy</Name>
+        <Relation>Son</Relation>
+        <DOB>2020-05-06</DOB>
+      </Dependent>
+    </Dependents>
+
+    <Claims>
+      <Claim claimId="CL-9010" reportedDate="2025-04-12" status="Settled">
+        <Treatment>
+          <Hospital>City Care Hospital</Hospital>
+          <From>2025-04-03</From>
+          <To>2025-04-08</To>
+          <Diagnosis>Appendicitis</Diagnosis>
+        </Treatment>
+        <Bills>
+          <Bill id="B-2001" date="2025-04-09" amount="75000.00" currency="INR">bill_CL-9010.pdf</Bill>
+        </Bills>
+        <Payments>
+          <Payment paymentId="P-7010" method="NEFT" date="2025-04-20" amount="73000.00" currency="INR">
+            <TransactionRef>TXN20250420090</TransactionRef>
+            <PaidTo>City Care Hospital</PaidTo>
+          </Payment>
+        </Payments>
+      </Claim>
+    </Claims>
+
+    <Beneficiaries>
+      <Beneficiary id="BEN-01" type="Primary">
+        <Name>Rahul Reddy</Name>
+        <Relation>Husband</Relation>
+        <Percent>100</Percent>
+      </Beneficiary>
+    </Beneficiaries>
+
+    <Agent agentId="AG-3005">
+      <Name>Vikram Singh</Name>
+      <Agency>HealthSure Agency</Agency>
+      <Contact>
+        <Phone>+91-9988123456</Phone>
+      </Contact>
+    </Agent>
+
+    <Audit>
+      <CreatedBy>import_job</CreatedBy>
+      <CreatedOn>2024-10-28T07:45:00</CreatedOn>
+      <LastUpdatedBy>policy_admin</LastUpdatedBy>
+      <LastUpdatedOn>2025-05-01T10:00:00</LastUpdatedOn>
+    </Audit>
+  </Policy>
+
+</InsuranceData>
